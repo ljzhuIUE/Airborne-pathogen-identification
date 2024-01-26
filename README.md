@@ -25,14 +25,14 @@ The dataset download link is https://www.scidb.cn/s/BrUnYr. The data used to tra
 The pretrained model were stored under the path ‘…/Algorithm/Raman-OSDL/Raman-OSDL/checkpoints/models’, ‘0-9’ means different models from the 10-fold cross validation.
 
 ## Running
-For training and testing a new model: python main_program.py. 
+For training and testing a new model: python main_program.py.\ 
 For evaluating a pretrained model: python main_program.py --resume checkpoints/models/ANN/4_fold/last_model.pth --evaluate --test_path test_path_data/new_data --other_path other_path_data/new_data (taking the example of using the four-fold model for evaluation). 
 
-Some parameters:
---resume: PATH. Load pretrained model to continue training.
---train_class_num: the number of known classes for training.
---test_class_num: the number of total classes for testing.
---evaluate: evaluate the model without training. So you should use --resume to load pretrained model.
---weibull_tail: parameters for weibull distribution, default 20.
---weibull_alpha: parameters for weibull distribution, default 3.
+Some parameters:\
+--resume: PATH. Load pretrained model to continue training.\
+--train_class_num: the number of known classes for training.\
+--test_class_num: the number of total classes for testing.\
+--evaluate: evaluate the model without training. So you should use --resume to load pretrained model.\
+--weibull_tail: parameters for weibull distribution, default 20.\
+--weibull_alpha: parameters for weibull distribution, default 3.\
 --weibull_threshold: parameters for confidence threshold, default 0.98. (0.98 may be the best for Raman-OSDL datasets)
