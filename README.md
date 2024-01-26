@@ -6,15 +6,16 @@ Code repository for our paper ‘Open-Set Deep Learning-enabled Single Cell Rama
 Environments, particularly those with pathogenic bioaerosols, are critical in airborne transmission and epidemics outbreak. However, rapidly and accurately identifying pathogens directly in complex environments remains a big challenge. Here, we report the development of an open-set attentional neural network deep learning algorithm (OSDL) to enable single-cell Raman to identify pathogens in real-word air environments containing diverse, unknown indigenous air bacteria that cannot be totally included in the training dataset. Raman datasets of bacteria in aerosol state were also established to improve precise identification. The obtained Raman-OSDL system achieves 93% accuracy for five target airborne pathogens, to our knowledge the highest accuracy of 84% for unseen air bacteria, and a significant 36% reduction in false positive rates compared to conventional closed-set algorithm-based methods. It also offers a high sensitivity down to 1/1000 pathogen abundance. When deployed to real air samples containing 4600 bacteria species annotated by metagenomics, our system can accurately identify either single or multiple pathogens within this consortia, and the entire identification process can be completed in just one hour. This single-cell tool holds great promise in rapidly surveilling pathogens in real air and other environments, aiding in prevention of infection transmission.
 
 ## Requirements
-python 3.6.15,\
-pytorch 1.4+, torchvision 0.7.0 +, 
-numpy 1.19.5, 
-scikit-learn 0.22.1, 
-libmr 0.1.9, 
-cython 0.29.33, 
-matplotlib 3.3.2, 
-opencv-contrib-python 4.7.0.68, 
-pandas 1.1.5, 
+python 3.6.15\
+pytorch 1.4+\
+torchvision 0.7.0\
+numpy 1.19.5\
+scikit-learn 0.22.1\
+libmr 0.1.9\
+cython 0.29.33\
+matplotlib 3.3.2\
+opencv-contrib-python 4.7.0.68\
+pandas 1.1.5\
 scipy 1.5.4
 
 ## Data
