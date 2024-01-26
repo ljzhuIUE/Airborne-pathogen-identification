@@ -24,8 +24,8 @@ The dataset download link is https://www.scidb.cn/s/BrUnYr. The data used to tra
 The pretrained model were stored under the path ‘…/Algorithm/Raman-OSDL/Raman-OSDL/checkpoints/models’, ‘0-9’ means different models from the 10-fold cross validation.
 
 ### Running
-For training and testing a new model: python main_program.py
-For evaluating a pretrained model: python main_program.py --resume checkpoints/models/ANN/4_fold/last_model.pth --evaluate --test_path test_path_data/new_data --other_path other_path_data/new_data (taking the example of using the four-fold model for evaluation).
+For training and testing a new model: python main_program.py. 
+For evaluating a pretrained model: python main_program.py --resume checkpoints/models/ANN/4_fold/last_model.pth --evaluate --test_path test_path_data/new_data --other_path other_path_data/new_data (taking the example of using the four-fold model for evaluation). 
 
 Some parameters:
 --resume: PATH. Load pretrained model to continue training.
